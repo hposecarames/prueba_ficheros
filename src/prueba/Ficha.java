@@ -10,7 +10,7 @@ import java.util.HashMap;
  */
 public class Ficha {
      private HashMap Ham_ListaAtributos = null;
-    private ArrayList<String> listaOperaciones = null;
+    private ArrayList<String> AL_listaOperaciones = null;
 
    
     
@@ -21,7 +21,7 @@ public class Ficha {
     
     public Ficha(HashMap arl_ListaOperaciones, ArrayList<String> listaOperaciones) {
         this.Ham_ListaAtributos = arl_ListaOperaciones;
-        this.listaOperaciones = listaOperaciones;
+        this.AL_listaOperaciones = listaOperaciones;
     }
 
     public HashMap getHam_ListaAtributos() {
@@ -32,12 +32,12 @@ public class Ficha {
         this.Ham_ListaAtributos = Ham_ListaAtributos;
     }
 
-    public ArrayList<String> getListaOperaciones() {
-        return listaOperaciones;
+    public ArrayList<String> getAL_listaOperaciones() {
+        return AL_listaOperaciones;
     }
 
-    public void setListaOperaciones(ArrayList<String> listaOperaciones) {
-        this.listaOperaciones = listaOperaciones;
+    public void setAL_listaOperaciones(ArrayList<String> AL_listaOperaciones) {
+        this.AL_listaOperaciones = AL_listaOperaciones;
     }
     
 }
