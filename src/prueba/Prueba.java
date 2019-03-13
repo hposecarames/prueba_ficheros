@@ -48,6 +48,8 @@ public class Prueba {
     Atributo dsfa = ParserSource.createAtributeFromText("FUE,Fuerza,5");
         System.out.println(dsfa.toString());
     
+        System.out.println();
+    
     } 
     
     }

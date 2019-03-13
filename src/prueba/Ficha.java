@@ -9,7 +9,7 @@ import java.util.HashMap;
  * @author Kinkalla
  */
 public class Ficha {
-     private HashMap arl_ListaOperaciones = null;
+     private HashMap Ham_ListaAtributos = null;
     private ArrayList<String> listaOperaciones = null;
 
    
@@ -20,16 +20,16 @@ public class Ficha {
    
     
     public Ficha(HashMap arl_ListaOperaciones, ArrayList<String> listaOperaciones) {
-        this.arl_ListaOperaciones = arl_ListaOperaciones;
+        this.Ham_ListaAtributos = arl_ListaOperaciones;
         this.listaOperaciones = listaOperaciones;
     }
 
-    public HashMap getArl_ListaOperaciones() {
-        return arl_ListaOperaciones;
+    public HashMap getHam_ListaAtributos() {
+        return Ham_ListaAtributos;
     }
 
-    public void setArl_ListaOperaciones(HashMap arl_ListaOperaciones) {
-        this.arl_ListaOperaciones = arl_ListaOperaciones;
+    public void setHam_ListaAtributos(HashMap Ham_ListaAtributos) {
+        this.Ham_ListaAtributos = Ham_ListaAtributos;
     }
 
     public ArrayList<String> getListaOperaciones() {
