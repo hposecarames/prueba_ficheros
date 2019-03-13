@@ -1,6 +1,6 @@
-FUE,Fuerza,5
-CON,Constitucion,3
-DES,Destreza,6
-AGI,Agilidad,12
-DES,Destreza,10
-PER,Percepcion,15
+FUE,Fuerza,5;
+CON,Constitucion,3;
+DES,Destreza,6;
+AGI,Agilidad,12;
+DES,Destreza,10;
+PER,Percepcion,15;

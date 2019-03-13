@@ -5,12 +5,12 @@
  */
 package prueba;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
-
+import static prueba.MetodosReutilizables.cleanString;
+//import MetodosReutilizables;
 /**
  *
  * @author Pablo Alonso Vazquez <pav.vigo@gmail.com>
@@ -24,13 +24,17 @@ public class ParserSource {
        
     }
 
-    public static HashMap run(File archivo) throws FileNotFoundException {
+    public static HashMap run(String archivo) throws FileNotFoundException {
          HashMap Hash_Atributos = new HashMap();
         Atributo auxAtributo = null ;
-        Scanner scanner = new Scanner(archivo);
+        archivo = cleanString(archivo,'\n');
+       //# System.out.println("archivo: "+archivo);
+        Scanner scanner = new Scanner(archivo);        
+        scanner.useDelimiter(";");
         String auxString = "";
-        while (scanner.hasNextLine()) {
-           auxString= scanner.nextLine();
+        while (scanner.hasNext()) {
+           auxString= scanner.next();
+           //# System.out.println("01-:"+auxString);
            auxAtributo = createAtributeFromText(auxString); // envio al metodo una linea del fichero de ejemplo y recibo un atributo ya formado
            Hash_Atributos.put(auxAtributo.getStr_ID(),auxAtributo); // añado al hashmap el atributo y como key el atributo.id
             
